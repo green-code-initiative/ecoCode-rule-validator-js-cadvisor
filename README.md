@@ -25,9 +25,9 @@ Write a mermaid diagram to represent the architecture of the system.
 ```mermaid
 graph TD
     A[Node.js container] -->|Connects to| B(Postgres container)
-    A -->|Connects to| C(cAdvisor container)
-    B -->|Stores data in| D(Postgres container)
-    C -->|Monitors| A
+    A -->|Calls API| C(cAdvisor container)
+    B -->|Stores data in| D(Postgres docker volume)
+    C -->|Returns data| A
 ```
 
 ### Tools
