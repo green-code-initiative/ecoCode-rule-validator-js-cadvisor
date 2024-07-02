@@ -20,8 +20,6 @@ Running containers:
 - the Postgres container with the database,
 - the cAdvisor container to monitor the execution and get the relevant data.
 
-Write a mermaid diagram to represent the architecture of the system.
-
 ```mermaid
 graph TD
     A[Node.js container] -->|Connects to| B(Postgres container)
